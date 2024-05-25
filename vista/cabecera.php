@@ -27,21 +27,24 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vista/subirTrabajo.php">Subir Publicación</a>
+              <a class="nav-link" href="subirTrabajo.php">Subir Publicación</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="subirTrabajo.php">Publicaciones</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Publicaciones
-              </a>
-              <ul class="dropdown-menu">
+              </a> -->
+              <!-- <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Editar</a></li>
-                <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                <li><a class="dropdown-item" href="#">Eliminar</a></li> -->
                 <!-- <li>
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-              </ul>
-            </li>
+              <!-- </ul>
+            </li> -->
             <li class="nav-item">
             <a class="nav-link" href="#">Cerrar Sesión</a>
           </li>
