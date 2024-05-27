@@ -9,16 +9,17 @@
 </head>
 
 <body>
-    <?php
-    include"./componentes/nav.php";
-    ?>
+    <?php include"./componentes/nav.php";?>
     <div id="app" class="h-screen z-10">
         <section class="[template-area:side] bg-blue-200">
             coso
         </section>
         <main class="[template-area:main] grid grid-cols-5">
-            <div class="bg-red-300 col-span-3">
-                coso
+            <div class="bg-zinc-200 col-span-3 pt-4 px-5">
+                <h2 class="text-xl mb-4">Principales</h2>
+                <section>
+                    <?php include"./componentes/card.php"?>
+                </section>
             </div>
             <div class="bg-green-300 col-span-2">
                 coso
