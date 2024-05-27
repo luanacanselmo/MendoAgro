@@ -5,52 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MendoAgro</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="index.css" />
+ 
+  <link rel="stylesheet" href="vista/css/index.css" />
+  <script src="index.js"></script>
+
 </head>
-
+  
 <body>
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">MendoAgro</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MendoAgro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="vista/subirTrabajo.php">Subir Publicación</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Publicaciones
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Editar</a></li>
-                <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                <!-- <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-              </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Cerrar Sesión</a>
-          </li>
-          </ul>
-
-        </div>
-      </div>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <div class="row">
+    <header>
+      <div id="logo" ><img src="logomendoagro.jpeg"style="width: 300px;" ></div>
+      <nav style="margin-top: -30px;">
+        <ul id="nav">
+          <li><a href="#" class="attivo">Inicio</a></li>
+          <li><a href="#">Trabajos</a></li>
+          <li><a href="#">Registrar</a></li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <section id="immagine">
+    <div class="row">
+      <img src="mendoagroport.png" style="margin-top: 100px;">
     </div>
-  </nav>
+  </section>
+  <div class="row">
+    <section id="contenuto">
+      <div class="col">
+        <h1>Cos'è RWD </h1>
+        <p>Nato da un’intuizione di <a href="http://ethanmarcotte.com/">Ethan Marcotte</a>, il <a href="http://en.wikipedia.org/wiki/Responsive_web_design">Responsive Web Design</a> è un approccio nuovo e diverso alla creazione e progettazione di pagine web, orientato al multi-device.</p>
+      </div>
+
+      <div class="col">
+        <h1>Workshop </h1>
+        <p>Il 31 Maggio presso il co-working <a href="http://www.thecollective.it/">The Collective</a> di Verona parleremo del passato, del presente e del futuro del Web Design, di workflow e realizzeremo pagine web responsive</p>
+      </div>
+
+      <div class="col">
+        <h1>Partecipa </h1>
+        <p>Sulla <a href="http://thecollectivelearning04.eventbrite.com/">pagina evento del Workshop</a> è possibile trovare tutte le informazioni sul programma della giornata, su come parteciapre e una presentazione del docente.</p>
+      </div>
+    </section>
+    <hr>
+    <footer>
+      <p><span class="mobile">RWD</span><span class="desktop">Responsive Web Design</span> | <a href="http://www.thecollective.it/">The Collective</a> - <a href="http://thecollectivelearning04.eventbrite.com/">Evento su Eventbrite</a></p>
+    </footer>
+
+  </div>
 </body>
 
 </html>
