@@ -21,7 +21,7 @@
         <ul id="nav">
           <li><a href="#" class="attivo">Inicio</a></li>
           <li><a href="vista/trabajos.php">Trabajos</a></li>
-          <li><a href="#">Registrar</a></li>
+          <li><a href="vista/login.php">Registrar</a></li>
           <li><a href="#">Nosotros</a></li>
         </ul>
       </nav>
