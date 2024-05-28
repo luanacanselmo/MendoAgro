@@ -10,7 +10,7 @@
 
 <body>
     <?php include "./componentes/nav.php"; ?>
-    <div id="app" class="h-screen z-10 bg-zinc-200 pt-5">
+    <div id="app" class="h-full z-10 bg-zinc-200 pt-5">
         <section class="[template-area:side] ">
 
         </section>
