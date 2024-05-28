@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MendoAgro</title>
  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-  
 <body>
-  <?php include"./vista/componentes/nav.php";?>
+<?php include "vista/componentes/nav.php"; ?>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+
   <section id="immagine">
     <div class="row">
       <img src="mendoagroport.png" style="margin-top: 100px;">
