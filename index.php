@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,24 +10,15 @@
  
   <link rel="stylesheet" href="vista/css/index.css" />
   <script src="index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-  
 <body>
+<?php include "vista/componentes/nav.php"; ?>
+
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
-  <div class="row">
-    <header>
-      <div id="logo" ><img src="logomendoagro.jpeg"style="width: 300px;" ></div>
-      <nav style="margin-top: -30px;">
-        <ul id="nav">
-          <li><a href="#" class="attivo">Inicio</a></li>
-          <li><a href="vista/trabajos.php">Trabajos</a></li>
-          <li><a href="vista/login.php">Registrar</a></li>
-          <li><a href="#">Nosotros</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+
+
   <section id="immagine">
     <div class="row">
       <img src="mendoagroport.png" style="margin-top: 100px;">

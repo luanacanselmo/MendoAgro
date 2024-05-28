@@ -1,5 +1,8 @@
-<?php include("cabecera.php"); 
- include("../controlador/publicacioControlador.php"); ?>
+<?php 
+ session_start();
+include("cabecera.php"); 
+ include("../controlador/publicacioControlador.php"); 
+ ?>
 
 
 <!DOCTYPE html>
@@ -46,12 +49,12 @@
         <div class="part2">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Fecha Inicio</label>
-                <input type="text" class="form-control" name="fechainicio" id="fechainicio" >
+                <input type="date" class="form-control" name="fechainicio" id="fechainicio" >
            
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Fecha Final Estimda</label>
-                <input type="text" class="form-control" name="fechafinal" id="fechafinal" >
+                <input type="date" class="form-control" name="fechafinal" id="fechafinal" >
            
             </div>
 
