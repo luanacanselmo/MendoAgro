@@ -16,7 +16,7 @@
 
                 <div class="flex flex-col pb-3">
                     <div class="flex">
-                        <input type="search" class="shadow relative m-0 block flex-auto rounded-l-lg border bg-white bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none " placeholder="Buscar trabajos" />
+                        <input type="search" class="shadow m-0 block flex-auto rounded-l-lg border bg-white bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none " placeholder="Buscar trabajos" />
                         <span class="flex items-center shadow rounded-r-lg whitespace-nowrap px-3 py-[0.25rem] text-green-900 [&>svg]:h-5 [&>svg]:w-5 bg-green-400" id="button-addon2">
                             <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -76,7 +76,7 @@
             </div>
         </main>
     </div>
-
+    
 </body>
 
 </html>
