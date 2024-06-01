@@ -1,7 +1,7 @@
 <?php
 include "../modelo/publicacionModelo.php";
+include "../controlador/logincontrolador.php";
 //si está definida, el formulario se envío
-include("cabecera.php");
 
 if (!empty($_POST["btnregistrartrabajo"])) {
     if (
@@ -17,9 +17,11 @@ if (!empty($_POST["btnregistrartrabajo"])) {
         $pago = $_POST["pago"];
         $localidadtrabajo = $_POST["localidadtrabajo"];
         $ubitrabajo = $_POST["ubitrabajo"];
+        $id_usuario = $_SESSION['id_usuario']; // Obtener el ID del usuario de la sesión
 
         // Llamar a la función insertarPersona con los datos del formulario
-        insertarTrabajo($titulo, $descripcion, $telefono, $fechainicio, $fechafinal, $pago, $localidadtrabajo, $ubitrabajo);
+        insertarTrabajo($titulo, $descripcion, $telefono, $fechainicio, $fechafinal, $pago, $localidadtrabajo, $ubitrabajo,$id_usuario);
+        header("Location: ../vista/subirTrabajo.php ");
     } else {
         echo "Algun campo está vacío";
     }

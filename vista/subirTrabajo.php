@@ -1,5 +1,4 @@
 <?php 
- session_start();
 include("cabecera.php"); 
  include("../controlador/publicacioControlador.php"); 
  ?>
@@ -25,7 +24,7 @@ include("cabecera.php");
     <div class="container-fluid row">
     
 
-        <form class="col-5 p-3" method="POST">
+        <form class="col-5 p-3" method="POST" action="../controlador/publicacioControlador.php">
 
           <div class="part1">
             <div class="mb-3">
@@ -81,56 +80,6 @@ include("cabecera.php");
         </div>
         </form>
   </section>    
-    <!-- <div class="col-8 p-4">
-            <table class="table">
-                <thead class="bg-info">
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">NOMBRE</th>
-                        <th scope="col">APELLIDO</th>
-                        <th scope="col">DNI</th>
-                        <th scope="col">FECHA DE NACIMIENTO</th>
-                        <th scope="col">CORREO</th>
-                        <th scope="col"></th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    $sql = $conexion->query("Select * from persona");
-                    //fetch_object() se utiliza para 
-                    //obtener la siguiente fila de resultados como un objeto.
-                    while ($datos = $sql->fetch_object()) { ?>
-                        <tr>
-                            <td><?= $datos->id //abreviatura de echo?></td> 
-                            <td><?= $datos->nombre ?></td>
-                            <td><?= $datos->apellido ?></td>
-                            <td><?= $datos->dni ?></td>
-                            <td><?= $datos->fecha_nac ?></td>
-                            <td><?= $datos->correo ?></td>
-                            <td>
-                                <form method="POST">
-                                
-                                    <input type="hidden" name="txtID" value="<?= $datos->id ?>" />
-                                    <button type="submit" name="accion2" value="Seleccionar" class="btn btn-small btn-warning">Seleccionar</button>
-
-                                </form>
-                            </td>
-                        </tr>
-                    <?php }
-                    ?>
-
-
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

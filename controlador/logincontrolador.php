@@ -1,12 +1,9 @@
 <?php
-session_start();
-include("../modelo/conexion.php");
-include("../modelo/sesionmodelo.php");
-include("seguridad.php");
+session_start(); // Iniciamos la sesión
 
-$usuario_valido = false;
+include("../modelo/conexion.php"); // Incluimos el archivo de conexión a la base de datos
 
-// Validar que los campos no estén vacíos
+// Validamos que se hayan enviado los datos de usuario y contraseña
 if (empty($_POST["usuario"]) || empty($_POST["contrasena"])) {
     header("Location: ../vista/login.php?error=Todos los campos son obligatorios.");
     exit();
@@ -15,28 +12,32 @@ if (empty($_POST["usuario"]) || empty($_POST["contrasena"])) {
 $usuario = $_POST["usuario"];
 $password = $_POST["contrasena"];
 
-// Escapar caracteres especiales para evitar inyección SQL
+// Escapamos caracteres especiales para evitar inyección SQL
 $usuario = mysqli_real_escape_string($conexion, $usuario);
 $password = mysqli_real_escape_string($conexion, $password);
 
-foreach ($usuarios as $usuario_registrado) {
-    if ($usuario == $usuario_registrado['usuario'] && $password == $usuario_registrado['password']) {
-        $_SESSION["autentificado"] = "1";
-        $_SESSION["user"] = $usuario;
-        $_SESSION["pass"] = $password;
-        
-        if ($usuario_registrado['roll'] == '1') {
-            header("Location: ../vista/subirTrabajo.php");
-        } else {
-            header("Location: ../index.php");
-        }
-        
-        $usuario_valido = true;
-        break;
-    }
-}
+// Consultamos la base de datos para verificar las credenciales
+$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
+$resultado = mysqli_query($conexion, $sql);
 
-if (!$usuario_valido) {
+
+
+if ($fila = mysqli_fetch_assoc($resultado)) {
+    // Credenciales válidas, creamos la sesión
+    $_SESSION["autentificado"] = true;
+    $_SESSION["usuario"] = $fila['usuario'];
+    $_SESSION["rol"] = $fila['roll'];
+    $_SESSION["id_usuario"] = $row['id_usuario'];
+    $id_usuario = $_SESSION['id_usuario']; // Obtener el ID del usuario de la sesión
+
+    // Redirigimos según el rol del usuario
+    if ($fila['roll'] == '1') {
+        header("Location: ../vista/subirTrabajo.php");
+    } else {
+        header("Location: ../index.php");
+    }
+} else {
+    // Credenciales incorrectas, redirigimos al login con un mensaje de error
     header("Location: ../vista/login.php?error=Usuario o contraseña incorrectos.");
     exit();
 }
