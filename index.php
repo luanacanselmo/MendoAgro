@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,22 @@
   <title>MendoAgro</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    nav,
-    #inc {
+    nav {
       background-color: #b9bc9a;
+    }
+
+    section {
+      background-color: #aaaaaa;
+    }
+
+    [data-animation="fade"] {
+      opacity: 0;
+      transition: .6s ease-in .3s;
+      --opacity: 1;
+    }
+
+    .unset {
+      opacity: var(--opacity);
     }
   </style>
 </head>
@@ -58,7 +71,7 @@
     <img src="Icon-MendoAgro/landing_Mesa de trabajo 1-01.svg" class="w-full h-auto">
   </section>
 
-  <section id="inc" class="py-6 grid grid-cols-1 md:grid-cols-2">
+  <section class="info py-6 grid grid-cols-1 md:grid-cols-2" data-animation="fade">
     <div class="border-r border-gray-400 px-12 py-6">
       <h1 class="text-2xl font-bold mb-8 ml-4">¿Qué es MendoAgro?</h1>
       <p>
@@ -124,7 +137,7 @@
       </div>
     </div>
   </section>
-  <section class="h-full py-6 px-12 bg-white">
+  <section class="info h-full py-6 px-12" data-animation="fade">
     <h1 class="text-2xl font-bold mb-8 mt-6 ml-4">¿Cómo funciona?</h1>
     <div class="grid grid-rows-7">
       <div>
@@ -144,7 +157,6 @@
         <p>Ten mayor alcance</p>
       </div>
     </div>
-    
   </section>
 </body>
 
