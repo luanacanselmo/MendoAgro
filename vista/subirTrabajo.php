@@ -21,17 +21,13 @@ include("cabecera.php");
 <section class="sectio1">
     <br>
     <h1 class="text-center p-3">Nuevo Trabajo </h1>
+    <p><?php  echo $_SESSION["user"]?></p>
     <div class="container-fluid row">
     
 
-        <form class="col-5 p-3" method="POST" action="../controlador/publicacioControlador.php">
+        <form class="col-5 p-3" action="../controlador/publicacioControlador.php" method="POST" action="../controlador/publicacioControlador.php">
 
           <div class="part1">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">ID</label>
-                
-                <input type="text" required readonly class="form-control"  name="id_publicacion" id="id_publicacion" placeholder="ID">
-            </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">titulo</label>
                 <input type="text" class="form-control" name="titulo" id="titulo" >
