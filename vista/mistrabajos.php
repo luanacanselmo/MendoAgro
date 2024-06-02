@@ -1,7 +1,7 @@
 <?php 
  session_start();
  include("../controlador/publicacioControlador.php"); 
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +16,6 @@
     <div id="app" class="block md:grid mx-3 pt-5">
         <section class="hidden md:block [template-area:side]">
             <div class="rounded-lg bg-white p-3">
-
                 <div class="flex flex-col pb-3">
                     <div class="flex">
                         <input type="search" class="shadow m-0 block flex-auto rounded-l-lg border bg-white bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none " placeholder="Buscar trabajos" />
