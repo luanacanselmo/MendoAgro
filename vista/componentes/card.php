@@ -1,7 +1,8 @@
 <?php
 include("../modelo/conexion.php");
 
-$sql = $conexion->query("Select * from trabajos");
+
+$sql = $conexion->query("Select * from trabajos where");
 while ($datos = $sql->fetch_object()) { ?>
     <div class="block mb-3 p-6 bg-white border border-gray-200 rounded-lg shadow">
         <figure class="flex flex-row items-center space-x-2 mb-3">

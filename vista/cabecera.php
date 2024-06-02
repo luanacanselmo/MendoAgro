@@ -32,7 +32,7 @@
             <li class="nav-item">
               <a class="nav-link" href="mistrabajos.php">Publicaciones</a>
             </li>
-            <!-- <li class="nvista/cardmistrabajos.phpav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Publicaciones
               </a> -->

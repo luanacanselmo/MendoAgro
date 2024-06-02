@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,6 @@
 </head>
 
 <body class="bg-zinc-200">
-    <?php include "./componentes/nav.php"; ?>
     <div id="app" class="block md:grid mx-3 pt-5">
         <section class="hidden md:block [template-area:side]">
             <div class="rounded-lg bg-white p-3">
@@ -62,7 +62,7 @@
             <div class="col-span-5 xl:col-span-3 px-3">
                 <h2 class="text-xl font-medium mb-4 ml-4">Principales</h2>
                 <section>
-                    <?php include "cardmistrabajos.php" ?>
+                    <?php include "cardMistrabajos.php" ?>
                 </section>
             </div>
             <div class="hidden xl:col-span-2 xl:block">
