@@ -1,8 +1,8 @@
 <nav class="grid grid-cols-4 md:grid-cols-8 gap-4 shadow-md sticky top-0 w-full bg-white h-20">
-    <div class="col-span-2 md:col-start-1 md:col-end-4 grid place-content-center">
+    <div class="col-span-2 md:col-start-2 md:col-end-3 grid place-content-center">
         <img src="/MendoAgro/Icon-MendoAgro/logo_MendoAgro_Black.png" class="h-12">
     </div>
-    <div class="grid col-start-4 md:col-end-9 md:col-span-3 xl:col-end-8 xl:col-span-2 place-content-center">
+    <div class="grid col-start-4 md:col-end-9 md:col-span-3 xl:col-end-9 xl:col-span-3 place-content-center">
         <button id="openMenu" class="md:hidden hover:text-green-600">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -11,11 +11,16 @@
                 <path d="M4 18l16 0" />
             </svg>
         </button>
-        <ul class="hidden md:flex md:flex-row font-semibold ">
-            <li class="border-r border-gray-400"><a class="hover:text-green-500 p-2" href="/MendoAgro/index.php">Inicio</a></li>
-            <li class="border-r border-gray-400"><a class="hover:text-green-500 p-2" href="/MendoAgro/vista/trabajos.php">Trabajos</a></li>
-            <li class="border-r border-gray-400"><a class="hover:text-green-500 p-2" href="/MendoAgro/vista/login.php">Registrar</a></li>
-            <li><a class="hover:text-green-500 p-2" href="#">Nosotros</a></li>
+        <ul class="hidden md:flex md:flex-row font-normal">
+            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/index.php">Inicio</a></li>
+            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/trabajos.php">Trabajos</a></li>
+            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="#">Nosotros</a></li>
+            <div class="flex ml-10">
+                <div class="flex items-center space-x-3">
+                    <p>¡Hola <?php echo $_SESSION['user'] ?>!</p>
+                    <img class="rounded-full w-8 h-8" src="https://ui-avatars.com/api/?name=<?php echo $_SESSION['user'] ?>" alt="perfil <?php echo $_SESSION['user'] ?>">
+                </div>
+            </div>
         </ul>
     </div>
 </nav>
@@ -37,6 +42,9 @@
             <li><a class="hover:text-green-500" href="/MendoAgro/vista/login.php">Registrar</a></li>
             <li><a class="hover:text-green-500" href="/MendoAgro/vista/nosotros.php">Nosotros</a></li>
         </ul>
+        <div>
+
+        </div>
     </div>
 </div>
 

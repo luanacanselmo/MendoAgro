@@ -1,12 +1,15 @@
 <?php
 include("../modelo/conexion.php");
 
-$sql = $conexion->query("Select * from trabajos");
+$sql = $conexion->query("SELECT t.*, u.usuario AS nombre_usuario
+FROM trabajos t
+JOIN usuarios u ON t.fk_usuario = u.id_usuario;");
+
 while ($datos = $sql->fetch_object()) { ?>
     <div class="block mb-3 p-6 bg-white border border-gray-200 rounded-lg shadow">
         <figure class="flex flex-row items-center space-x-2 mb-3">
-            <img class="rounded-full w-5 h-5" src="https://ui-avatars.com/api/?name=<?php echo $_SESSION['user']?>" alt="profile picture">
-            <div class="font-medium text-left text-sm"><?php echo $_SESSION['user']?></div>
+            <img class="rounded-full w-5 h-5" src="https://ui-avatars.com/api/?name=<?= $datos->nombre_usuario?>" alt="perfil <?= $datos->nombre_usuario?>">
+            <div class="font-medium text-left text-sm"><?= $datos->nombre_usuario?></div>
         </figure>
         <blockquote>
             <div class="mb-3">
