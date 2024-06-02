@@ -1,7 +1,5 @@
 <?php
-session_start();
 include "../modelo/publicacionModelo.php";
-//si está definida, el formulario se envío
 
 if (!empty($_POST["btnregistrartrabajo"])) {
     if (
@@ -25,4 +23,3 @@ if (!empty($_POST["btnregistrartrabajo"])) {
         echo "Algun campo está vacío";
     }
 }
-?>

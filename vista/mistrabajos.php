@@ -1,4 +1,7 @@
-
+<?php 
+ session_start();
+ include("../controlador/publicacioControlador.php"); 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 

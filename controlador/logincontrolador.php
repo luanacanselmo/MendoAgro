@@ -13,7 +13,7 @@ foreach ($ArrayUsuario as $usuario) {
         $_SESSION["id_usuario"] =  $usuario['id_usuario'];
         
         if ($usuario['roll'] == '1') {
-            header("Location: ../vista/subirTrabajo.php");
+            header("Location: ../vista/mistrabajos.php");
         } else {
             header("Location: ../index.php");
         }

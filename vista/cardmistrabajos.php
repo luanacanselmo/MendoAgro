@@ -1,15 +1,12 @@
 <?php 
 include("../modelo/conexion.php");
-include("../modelo/sesionmodelo.php");
 
-if (isset($_SESSION['id_usuario'])) {
-    $fk_usuario = $_SESSION["id_usuario"];
+$id_usuario = $_SESSION['id_usuario']; // Assuming the user ID is stored in the 'id_usuario' session variable
 
-    // Consulta SQL para obtener los trabajos del usuario
-    $sql = $conexion->query("SELECT * FROM trabajos WHERE fk_usuario = $fk_usuario");
+$sql = "SELECT * FROM trabajos WHERE fk_usuario = $id_usuario"; // Replace 'trabajos' with your actual table name
 
-
-while ($datos = $sql->fetch_object()) { ?>
+$result = $conexion->query($sql);
+while ($datos = $result->fetch_object()) { ?>
     <div class="block mb-3 p-6 bg-white border border-gray-200 rounded-lg shadow">
         <figure class="flex flex-row items-center space-x-2 mb-3">
             <img class="rounded-full w-5 h-5" src="https://ui-avatars.com/api/?name=Agustin+Suarez" alt="profile picture">
@@ -58,5 +55,5 @@ while ($datos = $sql->fetch_object()) { ?>
             </div>
         </blockquote>
     </div>
-<?php }}
+<?php }
 ?>
