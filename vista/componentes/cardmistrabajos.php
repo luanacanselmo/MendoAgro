@@ -53,6 +53,10 @@ while ($datos = $sql->fetch_object()) { ?>
                     </li>
                 </ul>
             </div>
+           <form method="post" action="./controlador/publicacioControlador.php">
+           <button type="submit"  name="accionModificar" value="Modificar">Modificar</button>
+           <button type="submit" name="accionEliminar" value="Eliminar" >Eliminar</button>
+           </form> 
         </blockquote>
     </div>
 <?php }

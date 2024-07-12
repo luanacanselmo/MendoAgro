@@ -13,8 +13,8 @@
         </button>
         <ul class="hidden md:flex md:flex-row font-normal">
             <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/index.php">Inicio</a></li>
-            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/trabajos.php">Trabajos</a></li>
-            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="#">Nosotros</a></li>
+            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/mistrabajos.php">Mis trabajos</a></li>
+            <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/subirTrabajo.php">Subir Trabajo</a></li>
             <div class="flex ml-10">
                 <div class="flex items-center space-x-3">
                     <p>¡Hola <?php echo $_SESSION['user'] ?>!</p>

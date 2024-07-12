@@ -23,3 +23,7 @@ if (!empty($_POST["btnregistrartrabajo"])) {
         echo "Algun campo está vacío";
     }
 }
+
+
+
+?>

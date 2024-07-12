@@ -60,7 +60,7 @@
         </section>
         <main class="[template-area:main] grid grid-cols-5">
             <div class="col-span-5 xl:col-span-3 px-3">
-                <h2 class="text-xl font-medium mb-4 ml-4">Principales</h2>
+                <h2 class="text-xl font-medium mb-4 ml-4">Mis trabajos</h2>
                 <section>
                     <?php include "./componentes/cardMistrabajos.php" ?>
                 </section>
