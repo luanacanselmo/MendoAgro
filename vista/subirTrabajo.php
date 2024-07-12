@@ -1,7 +1,9 @@
 <?php
 session_start();
-include("cabecera.php");
-?>
+ ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,13 +13,16 @@ include("cabecera.php");
     <title>Formulario de Trabajo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="vista.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 <body>
-<br><br>
+<?php include "./componentes/nav.php"; ?>
+
 <section class="sectio1">
     <br>
     <h1 class="text-center p-3">Nuevo Trabajo</h1>
-    <p><?php echo $_SESSION["user"]?></p>
     <div class="container-fluid row">
         <form class="col-5 p-3" action="../controlador/publicacioControlador.php" method="POST">
             <div class="part1">

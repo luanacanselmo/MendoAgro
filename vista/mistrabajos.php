@@ -51,11 +51,11 @@
                         </li>
                     </ul>
                 </div>
-                <div id="banner" class="xl:hidden rounded-lg p-4 flex flex-col items-center justify-center space-y-2">
+                <!-- <div id="banner" class="xl:hidden rounded-lg p-4 flex flex-col items-center justify-center space-y-2">
                     <p class="text-xl font-semibold">¿Estás buscando Empleados?</p>
                     <p>Puedes registrarte para empezar.</p>
                     <input type="button" value="Resgistrase" class="rounded-lg bg-green-400 text-green-900 font-normal px-3 py-1 text-center">
-                </div>
+                </div> -->
             </div>
         </section>
         <main class="[template-area:main] grid grid-cols-5">
@@ -65,7 +65,7 @@
                     <?php include "./componentes/cardMistrabajos.php" ?>
                 </section>
             </div>
-            <div class="hidden xl:col-span-2 xl:block">
+            <!-- <div class="hidden xl:col-span-2 xl:block">
                 <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow">
                     <div id="banner" class=" rounded-lg p-4 flex flex-col items-center justify-center space-y-2">
                         <p class="text-xl font-semibold">¿Estás buscando Empleados?</p>
@@ -73,7 +73,7 @@
                         <input type="button" value="Resgistrase" class="rounded-lg bg-green-400 text-green-900 font-normal px-3 py-1 text-center">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </main>
     </div>
 
