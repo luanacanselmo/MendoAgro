@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,7 +62,18 @@
             <div class="col-span-5 xl:col-span-3 px-3">
                 <h2 class="text-xl font-medium mb-4 ml-4">Mis trabajos</h2>
                 <section>
-                    <?php include "./componentes/cardMistrabajos.php" ?>
+                    <?php
+                    if (isset($_SESSION['id_usuario'])) {
+                        include("../modelo/conexion.php");
+                        $id_usuario = $_SESSION['id_usuario'];
+                        $sql = $conexion->query("SELECT t.*, u.usuario AS nombre_usuario FROM trabajos t JOIN usuarios u ON t.fk_usuario = u.id_usuario WHERE fk_usuario = $id_usuario;");
+                        while ($datos = $sql->fetch_object()) {
+                            include "./componentes/card.php";
+                        }
+                    } else {
+                        echo "No hay una sesión de usuario activa.";
+                    }
+                    ?>
                 </section>
             </div>
             <!-- <div class="hidden xl:col-span-2 xl:block">
