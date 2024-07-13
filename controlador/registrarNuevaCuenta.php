@@ -21,7 +21,7 @@ $correo = mysqli_real_escape_string($conexion, $correo);
 $query = "INSERT INTO usuarios (usuario, password, roll, correo) VALUES ('$usuario', '$password', '$roll', '$correo')";
 
 if (mysqli_query($conexion, $query)) {
-    header("Location: ../vista/subirTrabajo.php");
+    header("Location: ../vista/mistrabajos.php");
     exit();
 } else {
     echo "Error: " . $query . "<br>" . mysqli_error($conexion);
