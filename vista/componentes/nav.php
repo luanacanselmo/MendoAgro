@@ -13,7 +13,7 @@
         </button>
         <ul class="hidden md:flex md:flex-row font-normal">
             <!-- <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/index.php">Inicio</a></li> -->
-            <li class="flex items-center space-x-1 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/configuracion.php">Cerrar sesion</a></li>
+            <li class="flex items-center space-x-1 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/cerrarsesion.php">Cerrar sesion</a></li>
 
             <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/configuracion.php">Configuración</a></li>
             <li class="flex items-center space-x-3 p-2"><a class="hover:text-green-500" href="/MendoAgro/vista/mistrabajos.php">Mis trabajos</a></li>

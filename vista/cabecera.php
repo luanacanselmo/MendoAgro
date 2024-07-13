@@ -49,7 +49,7 @@
               <!-- </ul>
             </li> -->
             <li class="nav-item">
-            <a class="nav-link" href="#">Cerrar Sesión</a>
+            <a class="nav-link" href="cerrarsesion.php">Cerrar Sesión</a>
           </li>
           </ul>
 
