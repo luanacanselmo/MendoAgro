@@ -10,7 +10,24 @@
 </head>
 
 <body class="bg-zinc-200">
-    <?php include "./componentes/nav.php" ?>
+    <nav class="grid grid-cols-4 md:grid-cols-8 gap-4 shadow-md top-0 w-full h-20">
+        <div class="grid col-start-4 md:col-end-9 md:col-span-3 xl:col-end-8 xl:col-span-2 place-content-center">
+            <button id="openMenu" class="md:hidden hover:text-green-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex md:flex-row font-semibold ">
+                <li class="border-r border-gray-400"><a class="hover:text-green-500 p-2" href="/MendoAgro/index.php">Inicio</a></li>
+                <li class="border-r border-gray-400"><a class="hover:text-green-500 p-2" href="/MendoAgro/vista/trabajos.php">Trabajos</a></li>
+                <li class="border-r border-gray-400"><a class="hover:text-green-500 p-2" href="/MendoAgro/vista/login.php">Registrar</a></li>
+                <li><a class="hover:text-green-500 p-2" href="#">Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="app" class="block md:grid mx-3 pt-5">
         <section class="hidden md:block [template-area:side]">
             <div class="rounded-lg bg-white p-3">
