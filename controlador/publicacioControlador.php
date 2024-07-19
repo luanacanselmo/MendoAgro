@@ -27,4 +27,6 @@ if (!empty($_POST["btnregistrartrabajo"])) {
 
 
 
+
+
 ?>

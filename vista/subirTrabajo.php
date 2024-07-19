@@ -58,7 +58,7 @@ session_start();
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Localidad del Trabajo</label>
-                    <input type="text" class="form-control" name="localidadtrabajo" id="localidadtrabajo" value="<?php echo isset($_SESSION['trabajo']) ? $_SESSION['trabajo']->localidadtrabajo : ''; ?>">
+              4      <input type="text" class="form-control" name="localidadtrabajo" id="localidadtrabajo" value="<?php echo isset($_SESSION['trabajo']) ? $_SESSION['trabajo']->localidadtrabajo : ''; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Ubicación del Trabajo</label>
