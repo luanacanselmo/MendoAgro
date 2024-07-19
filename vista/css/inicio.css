@@ -1,11 +1,15 @@
-* {
+* {  
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: rgba(134, 134, 134, 0.148);
+
 }
 
 .iniciovista {
@@ -15,6 +19,7 @@ body {
     grid-template-rows: repeat(2, 200px); /* Dos filas de 200px de alto */
     gap: 80px; /* Espacio entre cuadros */
     justify-content: center; /* Centra los elementos horizontalmente */
+
 }
 
 .op1, .op2, .op3, .op4, .op5 {
