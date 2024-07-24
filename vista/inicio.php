@@ -14,37 +14,49 @@ session_start();
 <body>
 
     <?php include "./componentes/nav.php"; ?>
-
-    <p>Bienvenido  <?php echo $_SESSION['user'] ?> </p>
-
+    <section class="containergrnd">
+        <div class="container">
+            <h1>Bienvenido <?php echo (($_SESSION['user'])) ?>
+                </h1>
+            <p>Administra tus trabajos</p>
+        </div>
+    </section>
     <div class="iniciovista">
-        <div class="op1" id="cuadro">
+        <div class="op1" id="cuadro" onclick="location.href='mistrabajos.php'">
             <img src="../Icon-MendoAgro/scissor.svg">
             <p>Editar trabajo</p>
         </div>
 
-        <div class="op2" id="cuadro">
+        <div class="op2" id="cuadro" onclick="location.href='mistrabajos.php'">
             <img src="../Icon-MendoAgro/user.svg">
             <p>Ver mis trabajos</p>
 
         </div>
 
-        <div class="op3" id="cuadro">
+        <div class="op3" id="cuadro" onclick="location.href='subirTrabajo.php'">
 
             <img src="../Icon-MendoAgro/arrow-up.svg"><br>
             <p>Subir trabajo</p>
 
         </div>
-        <div class="op4" id="cuadro">
-        <img src="../Icon-MendoAgro/settings.svg">
-        <p>Configuración</p>
+        <div class="op4" id="cuadro" onclick="location.href='configuracion.php'">
+            <img src="../Icon-MendoAgro/settings.svg">
+            <p>Configuración</p>
+        </div>
 
 
-    </div>
+
         <div class="op5" id="cuadro">
-        <img src="../Icon-MendoAgro/settings.svg">
+        <img src="../Icon-MendoAgro/warning-square.svg">
 
+        
             <p>Solucionar Problemas</p>
+        </div>
+
+        <div class="op5" id="cuadro" onclick="location.href='cerrarsesion.php'">
+        <img src="../Icon-MendoAgro/log-out.svg">
+
+            <p>Cerrar sesion</p>
         </div>
     </div>
 

@@ -8,8 +8,36 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(134, 134, 134, 0.148);
+    background-color: rgba(182, 182, 182, 0.108);
 
+}
+
+.containergrnd {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+   
+}
+.container {
+    background-color: #d1d4d8;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+
+
+    
+}
+.container h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+.container p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
 }
 
 .iniciovista {
@@ -19,10 +47,12 @@ body {
     grid-template-rows: repeat(2, 200px); /* Dos filas de 200px de alto */
     gap: 80px; /* Espacio entre cuadros */
     justify-content: center; /* Centra los elementos horizontalmente */
+   
 
 }
 
 .op1, .op2, .op3, .op4, .op5 {
+
     border: 1px solid black; /* Ajusta el borde según tus necesidades */
     display: flex;
     flex-direction: column; /* Coloca los elementos en columna */
@@ -31,6 +61,7 @@ body {
     padding: 20px; /* Espacio interno opcional */
     box-shadow: 2px 2px 5px rgb(93, 83, 25); /* Sombra para darle profundidad */
     transition: transform 0.2s, box-shadow 0.2s; /* Transición para el hover effect */
+    cursor: pointer;
 }
 
 .op1:hover, .op2:hover, .op3:hover, .op4:hover, .op5:hover {
@@ -41,6 +72,7 @@ body {
 .op1 img, .op2 img, .op3 img, .op4 img, .op5 img {
     max-width: 50%;
     height: 50px;
+    
 }
 
 .op1 p, .op2 p, .op3 p, .op4 p, .op5 p {
@@ -48,4 +80,3 @@ body {
     text-align: center; /* Centra el texto */
     font-size: 16px; /* Tamaño de fuente */
 }
-

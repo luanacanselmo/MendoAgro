@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/login.css" />
 </head>
 <body>
+
 <div class="container" id="container">
     <div class="form-container sign-up-container">
       

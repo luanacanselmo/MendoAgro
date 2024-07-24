@@ -71,7 +71,7 @@
     <img src="Icon-MendoAgro/landing_Mesa de trabajo 1-01.svg" class="w-full h-auto">
   </section>
 
-  <section class="info py-6 grid grid-cols-1 md:grid-cols-2" >
+  <section class="info py-6 grid grid-cols-1 md:grid-cols-2">
     <div class="border-r border-gray-400 px-12 py-6">
       <h1 class="text-2xl font-bold mb-8 ml-4">¿Qué es MendoAgro?</h1>
       <p>
@@ -137,79 +137,79 @@
       </div>
     </div>
   </section>
- 
+
 
 
 
   <div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-    <div class="max-w-2xl">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">¿Cómo funciona?</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+    <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">¿Cómo funciona?</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+      </div>
+      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bubble-search.svg" alt="">
+
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Explora las vacantes disponibles</h3>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/mail.svg" alt="">
+
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Conecta con los trabajos que te interesen</h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bag.svg" alt="">
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">¡Empieza tu nuevo trabajo!</h3>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bag.svg" alt="">
+
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Puedes publicar trabajos y sus detalles</h3>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/globe.svg" alt="">
+
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Ten mayor alcance</h3>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/check.svg" alt="">
+
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Comenza ya</h3>
+            </div>
+          </div>
+        </li>
+
+        <!-- More people... -->
+      </ul>
     </div>
-    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div class="flex items-center gap-x-6">
-        <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bubble-search.svg" alt="">
-
-        <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Explora las vacantes disponibles</h3>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-        <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/mail.svg" alt="">
-
-        <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Conecta con los trabajos que te interesen</h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bag.svg" alt="">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">¡Empieza tu nuevo trabajo!</h3>
-           
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-        <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bag.svg" alt="">
-
-        <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Puedes publicar trabajos y sus detalles</h3>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-        <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/globe.svg" alt="">
-
-        <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Ten mayor alcance</h3>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-        <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/check.svg" alt="">
-
-        <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Comenza ya</h3>
-          </div>
-        </div>
-      </li>
-
-      <!-- More people... -->
-    </ul>
   </div>
-</div>
 
 
 </body>

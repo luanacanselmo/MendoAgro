@@ -82,13 +82,16 @@
                 <section>
                     <?php
                     include("../modelo/conexion.php");
+                    // Asegúrate de que `eliminado` es un campo en la tabla `trabajos`
                     $sql = $conexion->query("SELECT t.*, u.usuario AS nombre_usuario
-                        FROM trabajos t
-                        JOIN usuarios u ON t.fk_usuario = u.id_usuario;");
+FROM trabajos t
+JOIN usuarios u ON t.fk_usuario = u.id_usuario
+WHERE t.eliminado = 0"); // Agrega esta condición para filtrar los trabajos eliminados
                     while ($datos = $sql->fetch_object()) {
                         include "./componentes/card.php";
                     }
                     ?>
+
                 </section>
             </div>
             <div class="hidden xl:col-span-2 xl:block">
