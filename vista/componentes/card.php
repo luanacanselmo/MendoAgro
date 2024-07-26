@@ -9,9 +9,6 @@
             <p class="font-normal text-gray-700"><?= $datos->descripcion ?></p>
         </div>
 
-        <div class="mb-3">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><?= $datos->id_trabajo ?></h5>
-        </div>
 
         <div class="border-t-[1px] border-gray-200 pt-4">
             <ul class="space-y-3">

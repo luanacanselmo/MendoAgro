@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MendoAgro</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  
+
+
   <style>
     nav {
       background-color: #b9bc9a;
@@ -24,10 +27,29 @@
     .unset {
       opacity: var(--opacity);
     }
+
+
+    /* Animaciones */
+    .animate-bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <nav class="grid grid-cols-4 md:grid-cols-8 gap-4 shadow-md top-0 w-full h-20">
     <div class="grid col-start-4 md:col-end-9 md:col-span-3 xl:col-end-8 xl:col-span-2 place-content-center">
       <button id="openMenu" class="md:hidden hover:text-green-600">
@@ -150,8 +172,7 @@
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="h-16 w-16 rounded-full" src="Icon-MendoAgro/bubble-search.svg" alt="">
-
+            <img class="h-16 w-16 rounded" src="Icon-MendoAgro/bubble-search.svg" alt="">
             <div>
               <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Explora las vacantes disponibles</h3>
 
@@ -210,11 +231,40 @@
       </ul>
     </div>
   </div>
-
-
+  <div class="bg-gray-100 p-10">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-around">
+        <!-- Primer Circulo -->
+        <div class="flex flex-col items-center">
+          <div class="w-24 h-24 bg-white border-4 border-black rounded-full flex items-center justify-center animate-bounce">
+            <span class="text-3xl text-blue-600">1</span>
+          </div>
+          <p class="mt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Linea -->
+        <div class="flex-1 h-1 bg-black"></div>
+        <!-- Segundo Circulo -->
+        <div class="flex flex-col items-center">
+          <div class="w-28 h-28 bg-white border-4 border-black rounded-full flex items-center justify-center animate-bounce">
+            <span class="text-4xl text-blue-600">2</span>
+          </div>
+          <p class="mt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Linea -->
+        <div class="flex-1 h-1 bg-black"></div>
+        <!-- Tercer Circulo -->
+        <div class="flex flex-col items-center">
+          <div class="w-32 h-32 bg-white border-4 border-black rounded-full flex items-center justify-center animate-bounce">
+            <span class="text-5xl text-blue-600">3</span>
+          </div>
+          <p class="mt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
+
 <script>
   document.getElementById("closeMenu").addEventListener("click", function() {
     document.getElementById("menu").classList.toggle("hidden");

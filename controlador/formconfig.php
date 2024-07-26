@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../modelo/conexion.php");
+include("../modelo/configmodelo.php");
 
 // Verificar si la sesión contiene el id_usuario
 if (isset($_SESSION['id_usuario'])) {
